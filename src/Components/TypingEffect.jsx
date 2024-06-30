@@ -1,26 +1,22 @@
+import { useEffect, useState } from 'react';
 
-import { useState, useEffect } from 'react';
+function TypingEffect(text, speed) {
+    const [displayedText, setDisplayedText] = useState('');
 
-const TypingEffect = (text, delay) => {
-  const [displayedText, setDisplayedText] = useState('');
+    useEffect(() => {
+        let i = 0;
+        const timer = setInterval(() => {
+            setDisplayedText((prev) => prev + text.charAt(i));
+            i++;
+            if (i >= text.length) {
+                clearInterval(timer);
+            }
+        }, speed);
 
-  useEffect(() => {
-    if (!text) return;
+        return () => clearInterval(timer);
+    }, [text, speed]);
 
-    let index = 0;
-    setDisplayedText(''); // Reset the displayed text
-    const intervalId = setInterval(() => {
-      setDisplayedText(prev => prev + text.charAt(index));
-      index++;
-      if (index >= text.length) {
-        clearInterval(intervalId);
-      }
-    }, delay);
-
-    return () => clearInterval(intervalId);
-  }, [text, delay]);
-
-  return displayedText;
-};
+    return displayedText;
+}
 
 export default TypingEffect;
