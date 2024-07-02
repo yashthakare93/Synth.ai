@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/verce.ai/static/css/main.353d3c40.css",
-    "main.js": "/verce.ai/static/js/main.19d13a36.js",
+    "main.js": "/verce.ai/static/js/main.384865db.js",
     "static/media/brand-icons.svg": "/verce.ai/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/verce.ai/static/media/icons.62d9dae4e0040e81c980.svg",
     "static/media/outline-icons.svg": "/verce.ai/static/media/outline-icons.9c4845b4b41ef40a22fa.svg",
@@ -20,10 +20,10 @@
     "static/media/outline-icons.woff2": "/verce.ai/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/verce.ai/index.html",
     "main.353d3c40.css.map": "/verce.ai/static/css/main.353d3c40.css.map",
-    "main.19d13a36.js.map": "/verce.ai/static/js/main.19d13a36.js.map"
+    "main.384865db.js.map": "/verce.ai/static/js/main.384865db.js.map"
   },
   "entrypoints": [
     "static/css/main.353d3c40.css",
-    "static/js/main.19d13a36.js"
+    "static/js/main.384865db.js"
   ]
 }
