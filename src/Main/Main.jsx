@@ -12,6 +12,7 @@ function Main() {
   const [loading, setLoading] = useState(false); // Add loading state
   const historyRef = useRef(null);
   const [showButtons, setShowButtons] = useState(true);
+  const googleApiKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
   const creatorQuestions = [
     "who made you",
@@ -48,7 +49,7 @@ function Main() {
 
     try {
       const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${process.env.REACT_APP_GEMINI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={googleApiKey}`,
         data,
         {
           headers: {
