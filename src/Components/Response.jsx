@@ -7,7 +7,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 
 function Response({ question, answer }) {
-    const typingText = TypingEffect(answer, 15);
+    const typingText = TypingEffect(answer, 5);
 
     return (
         <div className='break-words max-w-full p-4'>

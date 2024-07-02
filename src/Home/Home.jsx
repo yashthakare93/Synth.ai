@@ -6,18 +6,17 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleTryVerseClick = () => {
-    navigate('/main');
+    navigate('/verse.ai');
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... flex items-center justify-center">
+    <div className="min-h-screen lg:bg-gradient-to-r bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
       <div className="flex flex-col justify-center items-start lg:p-24 p-20">
-          <div className="flex items-center">
-            <h1 className="text-5xl font-bold text-white">Verse</h1>
-            <h1 className="text-5xl font-bold text-white ml-4 animate-bounce">AI</h1>
+          <div className="flex ">
+            <h1 className="text-5xl font-bold text-white ">Verse AI</h1>
           </div>
-          <h4 className="lg:text-2xl sm:text-sm text-white pt-4">
+          <h4 className="lg:text-2xl sm:text-sm text-white pt-2">
             Expand your knowledge and capabilities – get answers to your questions, get things done, create and connect with Verse AI.
           </h4>
           <button
