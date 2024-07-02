@@ -9,8 +9,8 @@ const App = () => {
   return (
     <Router basename='/verce.ai'>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/verce.ai" element={<Main />} />
+        <Route exact path="/verce.ai" element={<Home />} />
+        <Route path="/main" element={<Main />} />
       </Routes>
     </Router>
   );

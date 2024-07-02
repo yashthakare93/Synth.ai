@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleTryVerseClick = () => {
-    navigate('/verce.ai');
+    navigate('/main');
   };
 
   return (
