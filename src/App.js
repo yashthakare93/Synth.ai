@@ -7,9 +7,9 @@ import 'semantic-ui-css/semantic.min.css';
 
 const App = () => {
   return (
-    <Router basename='/verce.ai'>
+    <Router basename='/verce-ai'>
       <Routes>
-        <Route exact path="/verce.ai" element={<Home />} />
+        <Route exact path="/verce-ai" element={<Home />} />
         <Route path="/main" element={<Main />} />
       </Routes>
     </Router>
