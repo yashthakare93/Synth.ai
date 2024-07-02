@@ -24,11 +24,10 @@ function Input({ onGenerateAnswer }) {
 
   const handleChange = (e) => {
     setQuestion(e.target.value);
-    // Example of dynamic placeholder change based on input length
     if (e.target.value.length > 0) {
-      setPlaceholderIndex(1); // Change placeholder to "Type your question here..."
+      setPlaceholderIndex(1); 
     } else {
-      setPlaceholderIndex(0); // Change placeholder back to "Ask Verse AI anything..."
+      setPlaceholderIndex(0); 
     }
   };
 
