@@ -37,7 +37,7 @@ function Input({ onGenerateAnswer }) {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  });
 
   return (
     <div className='flex justify-between px-2'>
