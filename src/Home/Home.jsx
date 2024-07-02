@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleTryVerseClick = () => {
-    navigate('/verse.ai');
+    navigate('/verce.ai');
   };
 
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
       <div className="flex flex-col justify-center items-start lg:p-24 p-20">
           <div className="flex ">
-            <h1 className="text-5xl font-bold text-white ">Verse AI</h1>
+            <h1 className="text-5xl font-bold text-white ">Verce AI</h1>
           </div>
           <h4 className="lg:text-2xl sm:text-sm text-white pt-2">
             Expand your knowledge and capabilities – get answers to your questions, get things done, create and connect with Verse AI.

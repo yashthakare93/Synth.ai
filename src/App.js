@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Verse.ai" element={<Main />} />
+        <Route path="/verce.ai" element={<Main />} />
       </Routes>
     </Router>
   );
